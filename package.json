@@ -1,0 +1,15 @@
+{
+  "name": "mental-health-api",
+  "version": "1.0.0",
+  "description": "API for mental health",
+  "scripts": {
+    "start:lambda": "netlify-lambda serve functions",
+    "build:lambda": "netlify-lambda build functions"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "netlify-lambda": "*"
+  }
+}

@@ -1,0 +1,38 @@
+# My Variables
+@baseurl = http://localhost:9000/api
+
+### Home
+GET {{baseurl}}/
+content-type: application/json
+
+### phq9
+GET {{baseurl}}/phq9
+content-type: application/json
+
+### therapists no limit
+GET {{baseurl}}/therapists
+content-type: application/json
+
+### therapists with limit
+@limit = 2
+GET {{baseurl}}/therapists?limit={{limit}}
+content-type: application/json
+
+
+### Correct diagnosis
+@score = 20
+POST {{baseurl}}/diagnosis
+content-type: application/json
+
+{
+    "score": "{{score}}"
+}
+
+### Incorrect diagnosis
+@noscore = 0
+POST {{baseurl}}/diagnosis
+content-type: application/json
+
+{
+   "score": "{{noscore}}"
+}
