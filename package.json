@@ -6,6 +6,7 @@
     "postinstall": "netlify-lambda install",
     "start:lambda": "netlify-lambda serve functions",
     "build:lambda": "netlify-lambda build functions",
+    "build": "npm run build:lambda",
     "prod": "npm run build:lambda"
   },
   "keywords": [],
