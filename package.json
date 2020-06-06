@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "API for mental health",
   "scripts": {
+    "postinstall": "netlify-lambda install",
     "start:lambda": "netlify-lambda serve functions",
     "build:lambda": "netlify-lambda build functions",
     "prod": "npm run build:lambda"
