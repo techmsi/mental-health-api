@@ -16,20 +16,17 @@ yarn start:lambda
 
 ### Endpoints
 
-- `/api/phq9`
+- GET `/api/phq9`
+  - return PHQ-9 questionnaire
 
-  - GETS PHQ-9 questionnaire
+- POST  `/api/diagnosis`
+  -  return PHQ-9 score to receive diagnosis
 
-- `/api/diagnosis`
+- GET `/api/therapists`
+  -  return a list of therapists
 
-  - POSTS PHQ-9 score to receive diagnosis
-
-- `/api/therapists`
-
-  - GETS a list of therapists
-
-- `/api/therapists?limit=5` no default
-  - GETS an `n` number of therapists
+- GET `/api/therapists?limit=5` no default
+  - returns an `n` number of therapists
 
 ### Technologies
 
