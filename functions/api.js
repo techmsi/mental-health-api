@@ -36,7 +36,7 @@ const getRoute = ({
         const { limit } = queryStringParameters;
         const list = limit ? chooseX(therapists, limit) : therapists;
 
-        return constructResponse({ therapists: list });
+        return constructResponse(list);
       }
     case 'POST':
       if (path.includes('diagnosis')) {
