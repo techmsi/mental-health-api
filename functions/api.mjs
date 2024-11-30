@@ -1,5 +1,5 @@
-const { therapists } = require('./data/therapists.json');
-const { scale: phq9Scale, ...phq9 } = require('./data/diagnosticPHQ9.json');
+import { therapists } from './data/therapists.json' assert { type: 'json' };
+import { scale: phq9Scale, ...phq9 }from './data/diagnosticPHQ9.json' assert { type: 'json' };
 
 const shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
 const chooseX = (arr, n) => (n ? shuffle(arr).slice(0, +n) : shuffle(arr));
@@ -53,7 +53,7 @@ const getRoute = ({
   }
 };
 
-exports.handler = async function (event) {
+xport const handler = async (event, context) => {
   console.log('Accessed', event.path);
   try {
     return getRoute(event);
