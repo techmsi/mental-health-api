@@ -4,3 +4,4 @@ node_modules
 /build
 /built-lambda
 /.netlify
+.DS_Store
