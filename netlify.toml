@@ -1,3 +1,13 @@
 [build]
-  command = "yarn build"
-  functions = "built-lambda"
+	command = "# no build command"
+	functions = "functions"
+	publish = "public"
+
+[functions]
+	directory= "functions"
+	node_bundler = "esbuild"
+
+[[redirects]]
+	from = "/api/*"
+	to = "/.netlify/functions/:splat"
+	status = 200
